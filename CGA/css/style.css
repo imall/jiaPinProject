@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.0.9/css/all.css");
+
+* {
+    list-style: none;
+    font-family: "Noto Sans TC", sans-serif;
+}
+
+html {
+    height: 100%;
+    padding-top: 76px;
+}
+
+body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+    display: inline-block;
+}
+#menu-control {
+    display: none;
+}
+
+
+.header-fixed {
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 0px 8px #bbb;
+    background-color: #fff;
+    left: 0;
+    top: 0;
+    z-index: 3;
+}
+.header-fixed .bg {
+    position: absolute;
+    left: -100px;
+}
+
+#menu-control:checked~.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .25);
+    transition: background-color .7s;
+}
+
+.main-header {
+    margin: auto;
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    box-sizing: border-box;
+    height: 76px;
+}
+
+.main-header h1 {
+    margin-bottom: 0;
+    display: flex;
+}
+
+.main-header h1 span {
+    position: absolute;
+    font-size: 1px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.main-header h1 a.logo {
+    display: block;
+    width: 176px;
+}
+
+
+
+.go-top {
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50px;
+    position: fixed;
+    right: 35px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #1A8937;
+    opacity: 1;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fade-out {
+    bottom: -100px;
+    opacity: 0;
+
+}
+
+
+
+.main-header h1 {
+    margin: auto;
+}
+
+.hb,
+.main-nav .nav-close {
+    display: block;
+    width: 30px;
+    height: 76px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+    cursor: pointer;
+    order: -1;
+}
+
+
+#menu-control:checked~* .main-nav,
+#menu-control:checked~.main-nav {
+    display: flex;
+    left: 0;
+}
+.main-nav {
+    position: absolute;
+    width: 75%;
+    height: 100vh;
+    top: 0;
+    left: -100%;
+    z-index: 3;
+    transition: left .7s;
+    background-color: #fff;
+    flex-direction: column;
+    padding-left: 25px;
+    overflow: auto;
+   
+}
+
+.main-nav>*{
+    flex-shrink: 0;
+}
+
+.main-nav .nav-close {
+    margin-left: auto;
+    margin-right: 20px;
+    height: 60px;
+
+}
+
+.main-nav .nav-close span:first-child {
+    margin: 0;
+    transform: translateY(2px) rotate(45deg);
+}
+
+.main-nav .nav-close span:last-child {
+    margin: 0;
+    transform: translateY(-2px) rotate(-45deg);
+}
+
+.hb span,
+.main-nav .nav-close span {
+    height: 4px;
+    margin: 4px 0;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+.main-nav ul{
+    padding-left: 0;
+}
+
+
+.main-nav{
+    font-size: 18px;
+    
+}
+
+.main-nav>a,
+.main-nav .drop-down,
+.main-nav .drop-down a{
+    padding: 5px 0;
+}
+
+.main-nav .drop-down input[type="checkbox"]{
+    display: none;
+}
+
+.main-nav .drop-down ul li{
+    padding-left: 15px;
+
+}
+
+.main-nav a:hover{
+    color: rgb(25, 137, 55);
+}
+.main-nav .drop-down label{
+    cursor: pointer;
+    user-select: none;
+}
+
+.drop-down label span{
+    display: inline-block;
+    padding-right: 5px;
+}
+
+.drop-down .fas{
+    display: inline-block;
+    transform-origin: center center;
+    transform:  rotate(180deg);
+    transition: .3s;
+
+
+}
+.drop-down .road-shop-list,
+.drop-down .member-list{
+    max-height: 0;
+    overflow: hidden;
+    transition: .5s;
+   
+}
+
+#shop-check:checked ~.road-shop-list,
+#member-check:checked ~.member-list{
+    max-height: 1000px;
+}
+
+#shop-check:checked ~ .shop-control .fas,
+#member-check:checked ~ .member-control .fas{
+    transform: rotate(0deg);
+}
+
+
