@@ -1,0 +1,64 @@
+.main-page {
+    position: relative;
+    padding-top: 40px;
+}
+
+.main-page .shop-list {
+    margin: 0;
+    padding: 0;
+    position: sticky;
+    top: 116px;
+}
+
+.main-page .shop-list li{
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+}
+.main-page .shop-list li.active a{
+    color: #198937;
+}
+.main-page .shop-list li a{
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
+    
+}
+.main-page .shop-list li a:hover{
+ color: #198937;
+}
+
+.main-page .shop h2{}
+.main-page .shop .shop-banner{}
+.main-page .shop .shop-banner img{
+    width: 100%;
+}
+.main-page .shop .shop-products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.main-page .shop .shop-products .product{
+    width: calc(50% - 10px);
+}
+.main-page .shop .shop-products .product h3{}
+.main-page .shop .shop-products .product img{
+    width: 100%;
+}
+.main-page .shop .shop-products .product .product-price{}
+.main-page .shop .shop-products .product .price{}
+@media screen and (min-width:768px) {
+    .main-page .shop .shop-products .product{
+        width: calc(25% - 15px);
+    }
+}
+
+@media screen and (max-width:767.98px) {
+    .main-page .shop-list {
+        display: flex;
+        overflow-x: scroll;
+    }
+    .main-page .shop-list li{
+        flex-shrink: 0;
+        padding-right: 15px;
+    }
+}

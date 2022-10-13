@@ -90,7 +90,8 @@ a {
 }
 
 .main-nav {
-    font-size: 18px;
+    font-weight: 300;
+    font-size: 20px;
 }
 
 .hb,
@@ -144,7 +145,7 @@ a {
 .main-nav>a,
 .main-nav .drop-down,
 .main-nav .drop-down a {
-    padding: 5px 0;
+    padding: 10px 0;
 }
 
 .main-nav .drop-down input[type="checkbox"] {
@@ -231,8 +232,8 @@ a {
         position: absolute;
         background: #fff;
         padding: 20px;
-        right: 0;
-        width: 150px;
+        right: -30px;
+        width: 200px;
         transition: .5s;
         box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
         border-radius: 5px;

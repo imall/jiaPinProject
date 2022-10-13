@@ -608,11 +608,11 @@ progress {
 
 /* 斷點 */
 
-@media (min-width:768px) {
+/* @media (min-width:768px) {
     .container, .container-md, .container-sm {
         max-width: 720px
     }
-}
+} */
 
 @media (min-width:992px) {
     .container, .container-lg, .container-md, .container-sm {
