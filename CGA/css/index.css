@@ -161,12 +161,15 @@
     color: #000;
 }
 
-.copyright {
-    font-weight: 100;
-    font-size: 16px;
+.copyright { 
     color: #fff;
     padding: 15px 0;
     background-color: #000;
+}
+
+.copyright h2{
+    font-weight: 100;
+    font-size: 16px;
     text-align: center;
 }
 
