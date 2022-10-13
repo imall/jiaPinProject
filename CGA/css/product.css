@@ -26,11 +26,21 @@
 .main-page .shop-list li a:hover{
  color: #198937;
 }
-
-.main-page .shop h2{}
-.main-page .shop .shop-banner{}
+.main-page .shop {
+    margin-bottom: 30px;
+}
+.main-page .shop h2{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+.main-page .shop .shop-banner{
+    margin-bottom: 20px;
+}
 .main-page .shop .shop-banner img{
     width: 100%;
+  
 }
 .main-page .shop .shop-products{
     display: flex;
@@ -39,13 +49,43 @@
 }
 .main-page .shop .shop-products .product{
     width: calc(50% - 10px);
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   
 }
-.main-page .shop .shop-products .product h3{}
+.main-page .shop .shop-products .product h3{
+   padding: 10px 20px 0;
+   font-size: 20px;
+}
+
+.main-page .shop .shop-products .product .pic{
+    order: -1;
+    overflow: hidden;
+}
 .main-page .shop .shop-products .product img{
     width: 100%;
+   
+    transition: .3s;
 }
-.main-page .shop .shop-products .product .product-price{}
-.main-page .shop .shop-products .product .price{}
+.main-page .shop .shop-products .product:hover{
+    color: #000;
+}
+.main-page .shop .shop-products .product:hover img{
+    transform: scale(1.1);
+    transition: .3s;
+}
+.main-page .shop .shop-products .product .product-price{
+    padding: 10px 20px ;
+    font-size: 18px;
+    color: #f00;
+}
+.main-page .shop .shop-products .product .price{
+    display: inline-block;
+    padding-left: 2px;
+}
 @media screen and (min-width:768px) {
     .main-page .shop .shop-products .product{
         width: calc(25% - 15px);
