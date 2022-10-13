@@ -205,7 +205,7 @@ a {
 
     .main-nav>a, .main-nav .drop-down {
         position: relative;
-        padding: 0 10px;
+        padding-left: 20px;
     }
 
     .main-nav .drop-down ul {
