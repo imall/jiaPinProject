@@ -1,0 +1,21 @@
+.yt{
+    aspect-ratio: 16/9;
+}
+.yt h2{
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    font-size: 1px;
+    overflow: hidden;
+    
+}
+.yt iframe{
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width:767.98px) {
+    .yt{
+        padding: 0;
+    }
+}

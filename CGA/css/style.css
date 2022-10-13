@@ -84,32 +84,15 @@ a {
     width: 176px;
 }
 
-
-
-.go-top {
-    text-align: center;
-    font-size: 30px;
-    border-radius: 50px;
-    position: fixed;
-    right: 35px;
-    bottom: 50px;
-    width: 50px;
-    height: 50px;
-    color: #fff;
-    background-color: #1A8937;
-    opacity: 1;
-    transition: 1s;
-    cursor: pointer;
+#menu-control:checked~* .main-nav,
+#menu-control:checked~.main-nav {
+    display: flex;
+    left: 0;
 }
 
-.fade-out {
-    bottom: -100px;
-    opacity: 0;
-
+.main-nav {
+    font-size: 18px;
 }
-
-
-
 
 .hb,
 .main-nav .nav-close {
@@ -126,14 +109,6 @@ a {
 }
 
 
-#menu-control:checked~* .main-nav,
-#menu-control:checked~.main-nav {
-    display: flex;
-    left: 0;
-}
-
-
-
 .main-nav>* {
     flex-shrink: 0;
 }
@@ -142,7 +117,6 @@ a {
     margin-left: auto;
     margin-right: 20px;
     height: 60px;
-
 }
 
 .main-nav .nav-close span:first-child {
@@ -166,12 +140,6 @@ a {
 .main-nav ul {
     padding-left: 0;
     margin-bottom: 0;
-}
-
-
-.main-nav {
-    font-size: 18px;
-
 }
 
 .main-nav>a,
@@ -199,6 +167,28 @@ a {
 }
 
 
+.go-top {
+    text-align: center;
+    font-size: 30px;
+    border-radius: 50px;
+    position: fixed;
+    right: 35px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    background-color: #1A8937;
+    opacity: 1;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.fade-out {
+    bottom: -100px;
+    opacity: 0;
+}
+
+
 @media screen and (min-width:768px) {
 
     .main-nav .nav-close,
@@ -222,8 +212,6 @@ a {
         max-height: 0;
         overflow: hidden;
         position: absolute;
-
-
     }
 
     .main-nav .drop-down ul a {
@@ -238,7 +226,22 @@ a {
         right: 0;
         width: 150px;
         transition: .5s;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+        border-radius: 5px;
     }
+
+    .main-nav .drop-down  .shop-control .fas,
+    .main-nav .drop-down  .member-control .fas{
+        transition: .5s;
+        transform: rotate(0deg);
+    }
+
+    .main-nav .drop-down:hover  .shop-control .fas,
+    .main-nav .drop-down:hover  .member-control .fas{
+        transition: .5s;
+        transform: rotate(180deg);
+    }
+
 }
 
 /* 手機 */
@@ -276,12 +279,7 @@ a {
 
     .main-nav .drop-down ul li {
         padding-left: 15px;
-
     }
-
-
-
-
 
 
     .drop-down .fas {
@@ -289,8 +287,6 @@ a {
         transform-origin: center center;
         transform: rotate(180deg);
         transition: .3s;
-
-
     }
 
     .drop-down .road-shop-list,
@@ -298,7 +294,6 @@ a {
         max-height: 0;
         overflow: hidden;
         transition: .5s;
-
     }
 
 }
