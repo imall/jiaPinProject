@@ -1,9 +1,13 @@
+body{
+    background-color: rgb(242, 242, 242);
+
+}
+
 .yt {
     aspect-ratio: 16/9;
 }
 
-.yt h2,
-.main-footer h2 {
+.yt h2{
     width: 1px;
     height: 1px;
     position: absolute;
@@ -123,60 +127,6 @@
 
 }
 
-.main-footer {
-    display: flex;
-    flex-direction: column;
-    background-color: #F6EDE2;
-    border-top: 2px solid #D5A273;
-}
-
-.main-footer .info {
-    display: flex;
-    padding: 30px 15px;
-    font-size: 16px;
-}
-
-.main-footer .info h3 {
-    font-weight: bold;
-    font-size: 16px;
-    display: inline-block;
-    border-bottom: 2px solid #000;
-}
-
-.main-footer .info ul {
-    padding: 0;
-    margin: 0;
-}
-
-.main-footer .info ul li{
- padding: 5px 0;
-}
-
-.main-footer .info ul li a{
-    font-weight: 100;
-    color: #666;
-}
-
-.main-footer .info ul li a:hover{
-    color: #000;
-}
-
-.copyright { 
-    color: #fff;
-    padding: 15px 0;
-    background-color: #000;
-}
-
-.copyright h2{
-    font-weight: 100;
-    font-size: 16px;
-    text-align: center;
-}
-
-.copyright span {
-    color: red;
-}
-
 
 @media screen and (max-width:767.98px) {
     .cga-fun .stamp-list .stamp {
@@ -195,7 +145,5 @@
         padding: 0;
     }
 
-    .copyright {
-        font-size: 14px;
-    }
+ 
 }
