@@ -33,7 +33,9 @@ img {
     margin-bottom: 30px;
 }
 
-.main-banner .main-des .des p {}
+.main-banner .main-des .des p {
+    font-weight: 300;
+}
 
 .culture {
     margin-bottom: 30px;
@@ -63,6 +65,8 @@ img {
 
 .culture .main-des p {
     padding: 0 20px;
+    font-weight: 300;
+
 }
 
 
