@@ -16,6 +16,11 @@ img {
     padding: 50px 0;
 }
 
+
+.main-banner .pic img {
+    height: 100%;
+}
+
 .main-banner .main-des {
     background-color: #F2F2F2;
     display: flex;
@@ -71,6 +76,14 @@ img {
 
 
 @media screen and (max-width:768px) {
+    h2 {
+        font-size: 20px;
+    }
+
+    .main-banner .main-des .des  h3,
+    .culture .main-des h3  {
+        font-size: 18px;
+    }
 
     .main-des {
         text-align: center;
