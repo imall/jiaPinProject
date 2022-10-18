@@ -54,12 +54,9 @@ body {
 .member-info li {
     padding: 10px 0;
     display: flex;
+    align-items: center;
 }
 
-.member-info li:not(:last-child) {
-    border-bottom: 1px solid #ccc;
-
-}
 
 .member-info li:first-child {
     flex-direction: column;
@@ -67,6 +64,7 @@ body {
 }
 
 .member-info li .label {
+    
     width: 30%;
     padding: 0 30px;
 }
@@ -90,6 +88,20 @@ body {
     font-size: 18px;
 }
 
+.member-info li .txt{
+    width: 70%;
+    flex-grow: 1;
+    padding-right: 10px;
+}
+
+.member-info li .txt .form-control:focus{
+    color: #212529;
+    background-color: #fff;
+    border-color: #000;
+    outline: 0;
+    box-shadow: 0 0 0 0.1rem #0008;
+}
+
 .member-info+.btn{
     display: inline-block;
     background-color: #198937;
@@ -98,6 +110,11 @@ body {
     width: 100%;
     padding: 10px 0;
 
+}
+
+.form-check-input:checked{
+    border-color: #198937;
+    background-color: #198937;
 }
 
 @media screen and (max-width:767.98px) {

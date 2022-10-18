@@ -86,7 +86,10 @@ body {
     text-align: center;
     font-size: 18px;
 }
-
+.member-info li .txt{
+    flex-grow: 1;
+    padding-right: 10px;
+}
 .member-info+.btn {
     display: inline-block;
     background-color: #198937;
@@ -119,9 +122,7 @@ body {
         border-bottom: none;
     }
 
-    .member-info li .txt{
-       
-    }
+  
 
 
 }

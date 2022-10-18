@@ -106,7 +106,7 @@
                                     class="fas fa-angle-up"></i></label>
                             <ul class="member-list">
                                 <li>
-                                    <a href="#">會員資訊</a>
+                                    <a href="./infomation.html">會員資訊</a>
                                 </li>
                                 <li>
                                     <a href="#">會員集章</a>
@@ -131,67 +131,124 @@
                         <a href="infomation.html">會員資訊</a>
                     </li>
                     <li>
-                        <a href="#">修改密碼</a>
+                        <a href="changepassword.html">修改密碼</a>
                     </li>
                     <li>
                         <a href="#">會員集章</a>
                     </li>
-                   
+
                 </ul>
             </div>
             <div class="col-12 col-md-10">
-                <ul action="#" class="member-info">
-                    <li>
-                        <div class="label pic">
-                            <img src="./img/male.bc00ab5.svg" alt="">
-                        </div>
-                      
-                       
-                    </li>
-                    <li>
-                        <div class="label">姓名
-                            <sup>*</sup>
-                        </div>
-                        <div class="txt">王大明</div>
-                    </li>
-                    <li>
-                        <div class="label">手機號碼<sup>*</sup></div>
-                        <div class="txt">0919441798</div>
-                    </li>
-                    <li>
-                        <div class="label">性別<sup>*</sup></div>
-                        <div class="txt">男</div>
-                    </li>
-                    <li>
-                        <div class="label">國籍<sup>*</sup></div>
-                        <div class="txt">本國籍</div>
-                    </li>
-                    <li>
-                        <div class="label">Email</div>
-                        <div class="txt">aaa@gmail.com</div>
-                    </li>
-                    <li>
-                        <div class="label">生日<sup>*</sup></div>
-                        <div class="txt">1995-11-10</div>
-                    </li>
-                    <li>
-                        <div class="label">興趣</div>
-                        <div class="txt">睡覺</div>
-                    </li>
-                    <li>
-                        <div class="label">地址</div>
-                        <div class="txt">新北市新莊區地球村</div>
-                    </li>
-                    <li>
-                        <div class="label">聯絡資訊</div>
-                        <div class="txt">沒有</div>
-                    </li>
-                    <li>
-                        <div class="label">自我介紹</div>
-                        <div class="txt">我是王大明</div>
-                    </li>
-                </ul>
-                <button class="btn">修改個人資料</button>
+                <form action="">
+                    <ul action="#" class="member-info">
+                        <li>
+                            <div class="label pic">
+                                <img src="./img/male.bc00ab5.svg" alt="">
+                            </div>
+
+                        </li>
+                        <li>
+                            <div class="label">姓名
+                                <sup>*</sup>
+                            </div>
+                            <div class="txt">
+                                <input type="text" class="form-control w-100" id="name" placeholder="請輸入姓名" value="王大明">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">手機號碼<sup>*</sup></div>
+                            <div class="txt">
+                                <input type="number" class="form-control w-100" id="name" placeholder="請輸入手機號碼"
+                                    value="0919441798">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">性別<sup>*</sup></div>
+                            <div class="txt">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="male">
+                                    <label class="form-check-label" for="male">
+                                        男
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="female" checked>
+                                    <label class="form-check-label" for="female">
+                                        女
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="gender" id="gender-other"
+                                        checked>
+                                    <label class="form-check-label" for="gender-other">
+                                        其他
+                                    </label>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">國籍<sup>*</sup></div>
+                            <div class="txt">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="nation" id="nation1">
+                                    <label class="form-check-label" for="nation1">
+                                        本國籍(Native)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="nation" id="nation2" checked>
+                                    <label class="form-check-label" for="nation2">
+                                        外國籍(Foreigner)
+                                    </label>
+                                </div>
+
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">Email</div>
+                            <div class="txt">
+                                <input type="text" class="form-control w-100" id="name" placeholder="請輸入信箱"
+                                    value="aaa@gmail.com">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">生日<sup>*</sup></div>
+                            <div class="txt">
+                                <input type="date" class="form-control w-100" id="name" placeholder="請輸入姓名"
+                                    value="1995-11-10">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">興趣</div>
+                            <div class="txt">
+                                <input type="text" class="form-control w-100" id="hobby" placeholder="請輸入興趣" value="睡覺">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">地址</div>
+                            <div class="txt">
+                                <input type="text" class="form-control w-100" id="address" placeholder="請輸入地址"
+                                    value="新北市新莊區地球村">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">聯絡資訊</div>
+                            <div class="txt">
+                                <input type="text" class="form-control w-100" id="name"
+                                    placeholder="請輸入欲顯示聯絡資訊，包括社群媒體ID或帳號" value="沒有">
+                            </div>
+                        </li>
+                        <li>
+                            <div class="label">自我介紹</div>
+                            <div class="txt">
+                                <textarea type="text" class="form-control w-100" id="name"
+                                    placeholder="請輸入自我介紹，可以交到更多好朋友">我是王大明</textarea>
+                            </div>
+                        </li>
+                    </ul>
+                    <button class="btn">送出</button>
+                </form>
             </div>
         </div>
     </section>
@@ -231,7 +288,7 @@
             </div>
         </div>
     </footer>
-  
+
     <span class="go-top fade-out "><i class="fas fa-angle-up"></i></span>
 </body>
 
