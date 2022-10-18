@@ -104,11 +104,11 @@ body {
         margin: 60px 0;
         display: flex;
         flex-wrap: wrap;
-        gap: 30px;
+        gap: 15px;
     }
     
     .points .point {
-        width: calc(33.33333% - 20px);
+        width: calc(33.33333% - 10px);
     }
 
 }
