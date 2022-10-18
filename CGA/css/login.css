@@ -1,0 +1,54 @@
+body {
+    height: 100%;
+}
+
+h2 {
+    padding-bottom:  10px;
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+.login-form {
+    margin-bottom: auto;
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+}
+
+
+.login-form .password a {
+    color: #0EA5E9;
+    display: block;
+    margin: 10px 0 20px;
+    text-align: right;
+    font-weight: 300;
+
+}
+
+.login-form button {
+    background-color: #198937;
+    font-weight: 300;
+}
+
+.login-form button:hover {
+    background-color: #198937;
+}
+
+
+.login-form .go-SignOn {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.login-form .go-SignOn a {
+    display: inline-block;
+    color: #0EA5E9;
+
+}
+
+
+.main-footer {
+    margin-top: initial;
+}

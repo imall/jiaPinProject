@@ -8,7 +8,9 @@
     position: sticky;
     top: 116px;
 }
-
+.shop-list li:first-of-type{
+    padding-top: 0;
+}
 .shop-list li {
     padding: 15px 0;
     border-bottom: 1px solid #eee;
@@ -115,13 +117,17 @@
 }
 
 @media screen and (max-width:767.98px) {
+    .shop-list li:first-of-type{
+        padding-top: 15px;
+    }
     .shop-list {
         display: flex;
-        overflow-x: scroll;
+        overflow-x: auto;
     }
 
     .shop-list li {
         flex-shrink: 0;
         padding-right: 15px;
+        border-bottom: none;
     }
 }
