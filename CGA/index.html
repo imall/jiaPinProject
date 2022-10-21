@@ -127,18 +127,58 @@
         </div>
     </header>
 
-    <section class="container">
+    <div class="container-fluid banner">
         <div class="row">
+            <div class="col-12">
+                <div id="carousel-slider" class="carousel slide" data-bs-ride="carousel">
+                  
+                    <div class="carousel-indicators">
+                        <!-- 第一個點點 class + active， data-bs-slide-to=0-->
+                        <button type="button" data-bs-target="#carousel-slider" data-bs-slide-to="0"
+                            class="rounded-circle active" aria-current="true"></button>
+                        <!-- 第二個點點 class 預設有一個 rounded-circle"， data-bs-slide-to=1  ，如果增加點點，就增加數字-->
+                        <button type="button" class="rounded-circle" data-bs-target="#carousel-slider"
+                            data-bs-slide-to="1"></button>
 
-            <div class="yt">
-                <h2>成廣澳youtuber影片介紹</h2>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/WA7GEXVGAP0"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+                    </div>
+
+                    <div class="carousel-inner">
+                        <!-- 第一張輪播圖，要先放active -->
+                        <div class="carousel-item active">
+                            <img src="./img/01.jpg" class="d-block w-100" alt="">
+                            <div
+                                class="carousel-caption d-flex  flex-dir flex-column align-items-center justify-content-center">
+                                <h2>以在地力量深耕，用產業實現社區的共生美好</h2>
+                            </div>
+                        </div>
+                        <!-- 第二張輪播圖 -->
+                        <div class="carousel-item">
+                            <img src="./img/02.jpg" class="d-block w-100" alt="">
+                            <div
+                                class="carousel-caption d-flex flex-dir flex-column align-items-center justify-content-center">
+                                <h2>魚菜共生有機農法，讓您吃得安心</h2>
+                            </div>
+                        </div>
+
+
+                        <!-- 左右按鈕 -->
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carousel-slider"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carousel-slider"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+
+
+                    </div>
+                </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <section class="container ">
         <div class="row cga-description">
