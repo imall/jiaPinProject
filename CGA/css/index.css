@@ -6,7 +6,13 @@ body{
 .banner .col-12{
    padding: 0;
 }
+.main-pic{
+   padding: 30px 0;
+}
 
+.main-pic img {
+    width: 100%;
+}
 .cga-description {
     padding: 50px 0;
 }
@@ -114,6 +120,85 @@ body{
 }
 
 
+
+
+.shop {
+    margin-bottom: 30px;
+}
+
+.shop h2 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.shop .shop-banner {
+    margin-bottom: 20px;
+}
+
+.shop .shop-banner img {
+    width: 100%;
+}
+
+.shop .shop-products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding-left: 0;
+}
+
+.shop .product {
+    width: calc(50% - 10px);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.shop .product a {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.shop .product h3 {
+    padding: 10px 20px 0;
+    font-size: 20px;
+}
+
+.shop .product .pic {
+    order: -1;
+    overflow: hidden;
+}
+
+.shop .product img {
+    width: 100%;
+    transition: .3s;
+}
+
+.shop a:hover {
+    color: #000;
+}
+
+.shop a:hover img {
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+.shop .product-price {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #f00;
+    margin-top: auto;
+}
+
+.shop .price {
+    display: inline-block;
+    padding-left: 2px;
+}
+
+
+
 @media screen and (max-width:767.98px) {
     .cga-fun .stamp-list .stamp {
         width: calc(50% - 20px);
@@ -132,4 +217,10 @@ body{
     }
 
  
+}
+
+@media screen and (min-width:768px) {
+    .shop .product {
+        width: calc(25% - 15px);
+    }
 }
